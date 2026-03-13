@@ -1,6 +1,6 @@
-# Responsive Portfolio Website Patrick
+# Responsive Portfolio Website
 ## [Watch it on youtube](https://youtu.be/Y4-xMb-eHOQ)
-### Responsive Portfolio Website Patrick
+### Responsive Portfolio Website
 
 - Responsive Portfolio Website Design Using HTML CSS & JavaScript
 - Contains animations when scrolling.
