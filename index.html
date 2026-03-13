@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Ryan - Portfolio Website</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <span class="nav__logo-circle">R</span>
+               <span class="nav__logo-name">Ryan</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link">Portfolio</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+
+                  <!-- Theme button inside menu for mobile -->
+                  <li class="nav__item nav__theme-item">
+                     <i class="ri-moon-line change-theme" id="theme-button"></i>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__buttons">
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-4-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <p class="home__greeting">Hi there, I'm</p>
+               <h1 class="home__name">
+                  <span id="typewriter"></span><span class="cursor">|</span>
+               </h1>
+
+               <div class="home__perfil">
+                  <div class="home__image">
+                     <img src="assets/img/perfil.png" alt="image" class="home__img">
+                     <div class="home__shadow"></div>
+
+                     <img src="assets/img/blob-border.svg" alt="" class="home__blob-border">
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://github.com/sieesta" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+
+                     <a href="https://www.facebook.com/ryan.cabalida.21" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                     </a>
+
+                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ryancabalida1121@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Ryan%2C" target="_blank" class="home__social-link">
+                        <i class="ri-mail-line"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__info">
+                  <p class="home__description">
+                     Bachelor of Science in Computer Science 3rd Year student at 
+                     Palawan State University-Narra Campus.
+                  </p>
+
+                  <a href="#about" class="home__scroll">
+                     <div class="home__scroll-box">
+                        <i class="ri-arrow-down-s-line"></i>
+                     </div>
+
+                     <span class="home__scroll-text">Scroll Down</span>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <h2 class="section__title-1">
+                  <span>About Me.</span>
+               </h2>
+
+               <div class="about__perfil">
+                  <div class="about__image">
+                     <img src="assets/img/perfil.png" alt="image" class="about__img">
+
+                     <div class="about__shadow"></div>
+
+                     <div class="geometric-box"></div>
+
+                     <div class="about__box"></div>
+               </div>
+               </div>
+
+               <div class="about__info">
+                  <p class="about__description">
+                     I'm <b>24 years old</b> and a <b>3rd year Computer Science student</b>. 
+                     I am currently learning and creating websites to improve 
+                     my skills step by step.
+                  </p>
+
+                  <ul class="about__list">
+                     <li class="about__item">
+                        <b>My Hobbies Are:</b> Playing games, playing piano, 
+                        and watching anime.
+                     </li>
+                  </ul>
+
+                  <div class="about__buttons">
+                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ryancabalida1121@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Ryan%2C" target="_blank" class="button">
+                        <i class="ri-send-plane-line"></i> Contact Me
+                     </a>
+
+                     <a href="https://www.facebook.com/ryan.cabalida.21" target="_blank" class="button__ghost">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <h2 class="section__title-2">
+               <span>Hobbies.</span>
+            </h2>
+
+            <div class="services__container container grid">
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-gamepad-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Playing Games</h2>
+
+                     <p class="services__description">
+                        I enjoy playing games during my free time to relax, 
+                        have fun, and stay focused.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-music-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Playing Piano</h2>
+
+                     <p class="services__description">
+                        Playing piano helps me express creativity and 
+                        improve my patience and discipline.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="services__card">
+                  <div class="services__border"></div>
+
+                  <div class="services__content">
+                     <div class="services__icon">
+                        <div class="services__box"></div>
+                        <i class="ri-film-line"></i>
+                     </div>
+
+                     <h2 class="services__title">Watching Anime</h2>
+
+                     <p class="services__description">
+                        I like watching anime for entertainment and 
+                        inspiration from different stories and art styles.
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title-1">
+               <span>Portfolio.</span>
+            </h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card project-gallery" data-images="assets/img/4.jpg" data-titles="Activity 1: Shapes">
+                  <div class="projects__image">
+                     <button type="button" class="projects__image-button" aria-label="Open Activity 1: Shapes">
+                        <img src="assets/img/4.jpg" alt="Activity 1: Shapes" class="projects__img">
+                     </button>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Activity 1</h3>
+                     <h2 class="projects__title">Activity 1: Shapes</h2>
+
+                     <p class="projects__description">
+                        Click the image to view it in full size.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="projects__card project-gallery" data-images="assets/img/5.jpg|assets/img/3.jpg" data-titles="Brochure|Brochure">
+                  <div class="projects__image">
+                     <button type="button" class="projects__image-button" aria-label="Open Brochure image">
+                        <img src="assets/img/5.jpg" alt="Brochure" class="projects__img">
+                     </button>
+                     <button type="button" class="projects__next">Next</button>
+                     <span class="projects__counter">1 / 2</span>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Activity Set</h3>
+                     <h2 class="projects__title">Brochure</h2>
+
+                     <p class="projects__description">
+                        Click the image for full size, then use Next to switch between image 5 and 3.
+                     </p>
+                  </div>
+               </article>
+
+               <article class="projects__card project-gallery" data-images="assets/img/1.jpg|assets/img/2.jpg" data-titles="Activity 2: Mask Effect|Activity 2: Text Around Image">
+                  <div class="projects__image">
+                     <button type="button" class="projects__image-button" aria-label="Open Activity 2 image">
+                        <img src="assets/img/1.jpg" alt="Activity 2: Mask Effect" class="projects__img">
+                     </button>
+                     <button type="button" class="projects__next">Next</button>
+                     <span class="projects__counter">1 / 2</span>
+                  </div>
+
+                  <div class="projects__content">
+                     <h3 class="projects__subtitle">Activity 2</h3>
+                     <h2 class="projects__title">Activity 2: Mask Effect</h2>
+
+                     <p class="projects__description">
+                        Click image 1 or 2 to view full size, then press Next to switch activity.
+                     </p>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <div class="portfolio-lightbox" id="portfolio-lightbox" aria-hidden="true">
+            <button type="button" class="portfolio-lightbox__close" id="portfolio-lightbox-close" aria-label="Close image preview">
+               <i class="ri-close-line"></i>
+            </button>
+
+            <img src="" alt="Portfolio preview" class="portfolio-lightbox__img" id="portfolio-lightbox-img">
+
+            <button type="button" class="portfolio-lightbox__next" id="portfolio-lightbox-next" aria-label="Next image">
+               &gt;
+            </button>
+         </div>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <div class="contact__container grid">
+               <div class="contact__data">
+                  <h2 class="section__title-2">
+                     <span>Contact Me.</span>
+                  </h2>
+
+                  <p class="contact__description-1">
+                     I will read all emails. Send me any 
+                     message you want and I'll get back to you.
+                  </p>
+
+                  <p class="contact__description-2">
+                     I need your <b>Name</b> and <b>Email Address</b>, but 
+                     you won't receive anything other than your reply.
+                  </p>
+
+                  <div class="geometric-box"></div>
+               </div>
+
+               <div class="contact__mail">
+                  <h2 class="contact__title">
+                     Send Me A Message
+                  </h2>
+
+                  <form action="" class="contact__form" id="contact-form">
+                     <div class="contact__group">
+                        <div class="contact__box">
+                           <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+                           <label for="name" class="contact__label">First Name</label>
+                        </div>
+
+                        <div class="contact__box">
+                           <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                           <label for="email" class="contact__label">Email Address</label>
+                        </div>
+                     </div>
+
+                     <div class="contact__box">
+                        <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+                        <label for="subject" class="contact__label">Subject</label>
+                     </div>
+
+                     <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                     </div>
+
+                     <p class="contact__message" id="contact-message"></p>
+
+                     <button type="submit" class="contact__button button">
+                        <i class="ri-send-plane-line"></i> Send Message
+                     </button>
+                  </form>
+               </div>
+
+               <div class="contact__social">
+                  <img src="assets/img/blob-border.svg" alt="" class="contact__social-svg">
+
+                  <div>
+                     <a href="https://github.com/sieesta" target="_blank" class="contact__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+
+                     <a href="https://www.facebook.com/ryan.cabalida.21" target="_blank" class="contact__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                     </a>
+
+                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ryancabalida1121@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Ryan%2C" target="_blank" class="contact__social-link">
+                        <i class="ri-mail-line"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+               <li>
+                  <a href="#about" class="footer__link">About</a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="footer__link">Portfolio</a>
+               </li>
+
+               <li>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ryancabalida1121@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Ryan%2C" target="_blank" class="footer__link">Contact Me</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; 2026 All Rights Reserved By 
+               <a href="#">Ryan.</a>
+            </span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
