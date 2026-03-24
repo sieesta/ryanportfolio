@@ -488,9 +488,13 @@ body.dark-theme .blur-header::after {
     margin-top: 1.25rem;
   }
 
-  .home__image {
-    width: 220px;
-    height: 220px;
+  .home__social {
+    row-gap: 0.5rem;
+  }
+
+  .home__social-link {
+    font-size: 0.875rem;
+    padding: 3px;
   }
 
   .projects__container {
@@ -548,10 +552,6 @@ body.dark-theme .blur-header::after {
   .home__name,
   .home__info {
     transform: translateX(0) !important;
-  }
-
-  .home__blob-border {
-    width: 280px;
   }
 
   .projects__container {
