@@ -99,30 +99,43 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*=============== EMAIL JS ===============*/
+/*=============== CONTACT FORM (GMAIL COMPOSE) ===============*/
 const contactForm = document.getElementById('contact-form'),
       contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) =>{
     e.preventDefault()
 
-    // serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_YOUR_SERVICE_ID', 'template_YOUR_TEMPLATE_ID', '#contact-form', 'YOUR_PUBLIC_KEY')
-    .then(() =>{
-        // Show sent message
-        contactMessage.textContent = 'Message sent successfully ✅'
+    const nameInput = document.getElementById('name')
+    const emailInput = document.getElementById('email')
+    const subjectInput = document.getElementById('subject')
+    const messageInput = document.getElementById('message')
 
-        // Remove message after five seconds
-        setTimeout(() =>{
-            contactMessage.textContent = ''
-        }, 5000)
+    const recipientEmail = 'ryancabalida1121@gmail.com'
+    const senderName = nameInput ? nameInput.value.trim() : ''
+    const senderEmail = emailInput ? emailInput.value.trim() : ''
+    const subject = subjectInput ? subjectInput.value.trim() : 'Portfolio Inquiry'
+    const message = messageInput ? messageInput.value.trim() : ''
 
-        // Clear input fields
-        contactForm.reset()
-    }, () =>{
-        // Show error message
-        contactMessage.textContent = 'Message not sent (service error) ❌'
-    })
+    const body =
+        `From: ${senderName}\n` +
+        `Email: ${senderEmail}\n\n` +
+        `${message}`
+
+    const gmailComposeUrl =
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipientEmail)}` +
+        `&su=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(body)}`
+
+    window.open(gmailComposeUrl, '_blank')
+
+    contactMessage.textContent = 'Opening Gmail compose window...'
+
+    setTimeout(() => {
+        contactMessage.textContent = ''
+    }, 4000)
+
+    contactForm.reset()
 }
 
 contactForm.addEventListener('submit', sendEmail)
@@ -161,6 +174,7 @@ window.addEventListener('scroll', scrollActive)
 const portfolioCards = document.querySelectorAll('.project-gallery')
 const portfolioLightbox = document.getElementById('portfolio-lightbox')
 const portfolioLightboxImg = document.getElementById('portfolio-lightbox-img')
+const portfolioLightboxCaption = document.getElementById('portfolio-lightbox-caption')
 const portfolioLightboxClose = document.getElementById('portfolio-lightbox-close')
 const portfolioLightboxNext = document.getElementById('portfolio-lightbox-next')
 
@@ -168,14 +182,26 @@ let lightboxImages = []
 let lightboxTitles = []
 let lightboxIndex = 0
 
+const getImageFileName = (path) => {
+    if (!path) return ''
+
+    const fileName = path.split('/').pop() || path
+    return fileName.replace(/\.[^/.]+$/, '')
+}
+
 const renderPortfolioLightbox = () => {
     if (!portfolioLightboxImg || !lightboxImages.length) return
 
     const imageSrc = lightboxImages[lightboxIndex]
     const imageTitle = lightboxTitles[lightboxIndex] || lightboxTitles[0] || 'Portfolio preview'
+    const fileName = getImageFileName(imageSrc)
 
     portfolioLightboxImg.src = imageSrc
     portfolioLightboxImg.alt = imageTitle
+
+    if (portfolioLightboxCaption) {
+        portfolioLightboxCaption.textContent = fileName || imageTitle
+    }
 }
 
 const openPortfolioLightbox = (images, startIndex, titles = []) => {
@@ -202,6 +228,7 @@ const closePortfolioLightbox = () => {
     portfolioLightbox.classList.remove('show-lightbox')
     portfolioLightbox.setAttribute('aria-hidden', 'true')
     portfolioLightboxImg.src = ''
+    if (portfolioLightboxCaption) portfolioLightboxCaption.textContent = ''
     lightboxImages = []
     lightboxTitles = []
     lightboxIndex = 0

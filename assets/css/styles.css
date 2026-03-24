@@ -992,6 +992,17 @@ body.dark-theme .blur-header::after {
   box-shadow: 0 10px 40px hsla(0, 0%, 0%, .5);
 }
 
+.portfolio-lightbox__caption {
+  margin-top: .85rem;
+  padding: .45rem .8rem;
+  border-radius: .5rem;
+  background-color: hsla(228, 20%, 12%, .8);
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  letter-spacing: .02em;
+}
+
 .portfolio-lightbox__close {
   position: fixed;
   top: 1rem;
@@ -1428,11 +1439,13 @@ body.body-lock {
 @media screen and (min-width: 960px) {
   .container {
     margin-inline: auto;
+    padding-inline: 1.5rem;
   }
 
   .home__container {
-    grid-template-columns: 300px 500px;
-    column-gap: 4.5rem;
+    grid-template-columns: minmax(0, 420px) minmax(0, 460px);
+    column-gap: 2rem;
+    justify-content: center;
     padding-block: 2rem 3rem;
   }
 
@@ -1455,7 +1468,7 @@ body.body-lock {
   .home__greeting,
   .home__name,
   .home__info {
-    transform: translateX(-3.5rem);
+    transform: translateX(0);
   }
 
   .home__info {
@@ -1616,12 +1629,19 @@ body.body-lock {
   }
 
   .projects__container {
-    grid-template-columns: repeat(3, 320px);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+    column-gap: 1rem;
+    row-gap: 1.5rem;
     padding-block: 3rem 1rem;
+    width: 100%;
+    justify-content: center;
   }
 
   .projects__card {
-    padding: 1.25rem;
+    padding: 1rem;
+    max-width: 300px;
+    width: 100%;
+    justify-self: center;
   }
 
   .projects__image {
@@ -1702,13 +1722,25 @@ body.body-lock {
 
   .footer__container {
     padding-block: 4rem;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: space-between;
+    padding-inline: 1.5rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    row-gap: 1.25rem;
   }
 
   .footer__links {
-    column-gap: 3rem;
-    order: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: .75rem;
+    order: 0;
+  }
+
+  .footer__copy {
+    text-align: center;
+    justify-self: center;
   }
 
   .scrollup {
