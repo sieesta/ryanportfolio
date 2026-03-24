@@ -488,6 +488,15 @@ body.dark-theme .blur-header::after {
     margin-top: 1.25rem;
   }
 
+  .home__social {
+    row-gap: 0.5rem;
+  }
+
+  .home__social-link {
+    font-size: 0.875rem;
+    padding: 3px;
+  }
+
   .projects__container {
     row-gap: 1.5rem;
   }
