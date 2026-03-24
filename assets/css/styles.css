@@ -1431,8 +1431,8 @@ body.body-lock {
   }
 
   .home__container {
-    grid-template-columns: 455px 550px;
-    column-gap: 7rem;
+    grid-template-columns: 420px 500px;
+    column-gap: 4.5rem;
     padding-block: 2rem 3rem;
   }
 
@@ -1442,8 +1442,8 @@ body.body-lock {
   }
 
   .home__image {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
   }
 
   .home__shadow {
@@ -1496,21 +1496,21 @@ body.body-lock {
   }
 
   .home__blob-border {
-    width: 550px;
+    width: 500px;
   }
 
   .home__social {
-    right: -6rem;
+    right: -4.5rem;
   }
 
   .home__social-link {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     padding: .5rem;
   }
 
   .about__container {
-    grid-template-columns: 550px 460px;
-    column-gap: 4.5rem;
+    grid-template-columns: 500px 420px;
+    column-gap: 3.5rem;
     padding-bottom: 1rem;
   }
 
@@ -1520,8 +1520,8 @@ body.body-lock {
   }
 
   .about__image {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
   }
 
   .about__img {
@@ -1531,10 +1531,10 @@ body.body-lock {
   }
 
   .about__shadow {
-    width: 240px;
-    height: 615px;
+    width: 210px;
+    height: 560px;
     top: -4rem;
-    right: -5.5rem;
+    right: -4.5rem;
     border-bottom: 6px solid var(--first-color);
   }
 
@@ -1588,8 +1588,8 @@ body.body-lock {
   }
 
   .services__container {
-    grid-template-columns: repeat(3, 282px);
-    column-gap: 5rem;
+    grid-template-columns: repeat(3, 260px);
+    column-gap: 3rem;
     padding-block: 3rem 5rem;
   }
 
@@ -1616,7 +1616,7 @@ body.body-lock {
   }
 
   .projects__container {
-    grid-template-columns: repeat(3, 352px);
+    grid-template-columns: repeat(3, 320px);
     padding-block: 3rem 1rem;
   }
 
@@ -1633,7 +1633,7 @@ body.body-lock {
   }
 
   .contact__container {
-    grid-template-columns: 440px 670px;
+    grid-template-columns: 400px 620px;
     grid-template-rows: initial;
     padding-bottom: 2rem;
   }
@@ -1641,7 +1641,7 @@ body.body-lock {
   .contact__mail {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-    padding: 7rem 5.5rem 6rem 7.5rem;
+    padding: 6rem 4rem 5rem 5rem;
     margin-top: 0;
   }
 
@@ -1664,10 +1664,10 @@ body.body-lock {
   }
 
   .contact__data {
-    width: 392px;
-    height: 375px;
-    padding: 4.5rem 3.5rem 3.5rem;
-    margin: 7.5rem 0 0 8rem;
+    width: 340px;
+    height: 340px;
+    padding: 3.5rem 2.5rem 2.5rem;
+    margin: 6rem 0 0 5rem;
     border-bottom: 6px solid var(--first-color);
   }
 
@@ -1677,7 +1677,7 @@ body.body-lock {
   }
 
   .contact__social {
-    margin-left: 8rem;
+    margin-left: 5rem;
     text-align: initial;
   }
 
@@ -1712,6 +1712,6 @@ body.body-lock {
   }
 
   .scrollup {
-    right: 3rem;
+    right: 2rem;
   }
 }
