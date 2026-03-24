@@ -300,5 +300,6 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__perfil, .about__image, .contact__mail`, {origin: 'right'})
-sr.reveal(`.home__greeting, .home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data`, {origin: 'left'})
+sr.reveal(`.home__greeting, .home__name, .home__info, .home__social, .about__container .section__title-1, .about__info, .contact__social, .contact__data`, {origin: 'left'})
+sr.reveal(`.home__social-link`, {origin: 'bottom', interval: 120, distance: '30px'})
 sr.reveal(`.services__card, .projects__card`, {interval: 100})
